@@ -217,16 +217,25 @@ img {
 }
 .home__title {
   font-size: var(--big-font-size);
-  margin-bottom: 0.5rem; /* ✅ Tighten space below "Hi I'm Sindhu" */
+  margin-bottom: 0.5rem; 
 }
 
 .home__action {
-  margin-top: -50px; /* ✅ This gently moves the entire block upward */
+  margin-top: -50px; 
 }
 
 .home__title-color {
   color: var(--first-color);
 }
+
+.btn {
+  background-color: var(--first-color);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
 .home__social {
   display: flex;
   flex-direction: column;
@@ -253,7 +262,7 @@ img {
   height: 300px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: 50% 20%; /* ✅ Focus just below center to balance head & body */
+  object-position: 50% 30%; 
   box-shadow: 0 0 15px var(--first-color);
   transition: transform 0.3s ease-in-out;
 }
@@ -262,21 +271,22 @@ img {
   right: 0;
   bottom: 0;
   width: 300px;
-  margin-bottom: 80px;
+  margin-bottom: 65px;
 }
+
 .button {
-  display: inline-block;         /* ✅ Keeps button only as wide as content */
+  display: inline-block;         
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   background-color: var(--first-color);
   color: #fff;
   border: none;
   border-radius: 0.5rem;
-  text-decoration: none;         /* ✅ Removes underline */
+  text-decoration: none;         
   cursor: pointer;
   transition: background-color 0.3s ease;
-  white-space: nowrap;           /* ✅ Prevents breaking into two lines */
-  max-width: max-content;        /* ✅ Optional: ensures no overflow */
+  white-space: nowrap;           
+  max-width: max-content;        
 }
 
 .button:hover {
@@ -520,6 +530,14 @@ body {
     }
 
 /* PROJECTS */
+.section-heading {
+  color: #4D70FF;               
+  text-decoration: underline; 
+  text-align: center;        
+  font-size: 2rem;           
+  margin: 40px 0;            
+}
+
 .work__container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
